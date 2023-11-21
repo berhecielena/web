@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Newspaper Site</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="editor-login.html">Editor Login</a></li>
+            <li><a href="author-login.html">Author Login</a></li>
+            <li><a href="reader-login.html">Reader Login</a></li>
+            <li><a href="register-page.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Register new user</h2>
+
+        <div class="account-selection">
+          <input type="radio" id="author" name="accountType" value="author" />
+          <label for="author">Author</label>
+
+          <input type="radio" id="editor" name="accountType" value="editor" />
+          <label for="editor">Editor</label>
+
+          <input type="radio" id="reader" name="accountType" value="reader" />
+          <label for="reader">Reader</label>
+        </div>
+
+        <form class="form">
+          <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+  <footer>
+    <p>&copy; 2023 Newspaper Site</p>
+  </footer>
+</html>

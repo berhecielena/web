@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <title>Reader Login</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Link to your CSS file -->
   </head>
   <body>
     <header>
@@ -14,33 +13,23 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="editor-login.html">Editor Login</a></li>
           <li><a href="author-login.html">Author Login</a></li>
-          <li><a href="reader-login.html" class="active">Reader Login</a></li>
+          <li><a href="reader-login.html">Reader Login</a></li>
+          <li><a href="register-page.html">Register</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Reader Login</h1>
+      <h2>Reader Login</h2>
       <form id="loginForm" action="authenticate.php" method="post">
-        <!-- Your login form inputs -->
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Username"
-        />
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Password"
-        />
-        <button type="submit">Login</button>
-      </form>
+        <form id="loginForm" action="authenticate.php" method="post">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="password" id="password" name="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
     </main>
-
-    <footer>
+  </body>
+   <footer>
       <p>&copy; 2023 Newspaper Site</p>
     </footer>
-  </body>
 </html>
